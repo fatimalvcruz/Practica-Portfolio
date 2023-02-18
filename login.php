@@ -2,7 +2,7 @@
 session_start();
 
 if($_POST){
-    if( ($_POST['usuario']=="fatima") && ($_POST['contrasenia']=="12345")){
+    if( ($_POST['usuario']=="fatima") && ($_POST['contrasenia']=="")){
         $_SESSION['usuario']="fatima";
         header("location:index.php");
     }
